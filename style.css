@@ -8,7 +8,7 @@ body {
   background-color: #121212;
   color: #ffffff;
   font-family: Arial, sans-serif;
-  margin-left: 80px;
+  margin-left: 62px;
   border: 1px solid #1b1b1b;
   height: 100vh;
 }
@@ -60,22 +60,24 @@ button:hover {
   border-radius: 8px;
   
 
-  li{
-    width: 30px;
-    height: 30px;
+  li a{
+    display: flex;
+    text-align: center;
     background-color: #2196F3;
     cursor: pointer;
     margin-bottom: 5px;
     border-radius: 4px;
     &:hover {
     border: 1px solid #cccccc;
-  }
+    }
 
   img{
     width: 20px;
     height: 20px;
     margin-top: 5px;
     margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 
     &:hover {
       filter: brightness(1.2);
@@ -83,3 +85,34 @@ button:hover {
   }
 }
 }
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  li {
+    margin-bottom: 10px;
+    a {
+      color: #2196F3;
+      font-size: 1.2rem;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 10px;
+    a {
+      color: #2196F3;
+      font-size: 1.2rem;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+}
+
