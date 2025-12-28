@@ -81,9 +81,10 @@ button:hover {
 
     &:hover {
       filter: brightness(1.2);
+      scale: 1.2;
+   }  
   }
-  }
-}
+ }
 }
 
 .news-list {
@@ -116,3 +117,48 @@ button:hover {
   }
 }
 
+.news-box {
+  background-color: #1e1e1e;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+
+    li {
+      width: 120px;
+      height: 80px;
+      margin-bottom: 10px;
+      border: 1px solid #858585;
+      border-radius: 4px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+
+
+      &:hover {
+        border: 1px solid #cccccc;
+        scale: 1.5;
+        background-color: #121212;
+      }
+
+      a {
+        color: #2196F3;
+        font-size: 1.2rem;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
